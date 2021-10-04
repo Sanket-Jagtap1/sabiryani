@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Exo+2:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Mono&display=swap');
+/* 
+7EB5A6
+C36839
+86340A
+E8D0B3 */
+
+
+.bg-pink{
+    background-color: #C36839;
+}
+
+.bg-second{
+    background: #e0e6e4;
+}
+.text-pink{
+    color: #C36839;
+}
+
+
+body{
+    font-family: 'Cuprum', sans-serif;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Merriweather',Georgia,"Times New Roman",serif;
+}
+
+/* ===== header ===== */
+
+#header ul li a{
+    font-size: 20px;
+    font-weight: 600;
+    color: #584b42;
+
+}
+
+#header ul li a:hover{
+    color: #C36839;
+}
+
+/* ===== hero section ===== */
+#hero{
+    height: 87vh;
+    background: url(https://cdn.pixabay.com/photo/2021/09/25/18/54/dish-6655595_960_720.jpg) no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 99;
+}
+#hero::before{
+    content: "";
+    background-color: #000000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.7;
+    z-index: -99;
+}
+#hero .right, #hero .left{
+    height: 87vh;
+    color: #fff;
+    
+}
+
+#hero .right h3{
+    font-size: 32px;
+}
+#hero .right h1{
+    color: #C36839;
+    font-size: 44px; 
+    font-weight: 600;
+    letter-spacing: 3px;
+    /* text-shadow: 2px 2px 4px #000000; */
+}
+
+
+/* ===== about ===== */
+
+#about-us{
+    background: #e0e6e4;
+}
+
+
+#biryani, #veg, #nonveg{
+    display: none;
+}
+@media screen and (min-width: 762px) {
+    #hero .right h1{
+        font-size: 64px; 
+        
+    }
+}
+@media screen and (min-width: 1024px) {
+    
+}
