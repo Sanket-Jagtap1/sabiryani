@@ -30,6 +30,14 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /* ===== header ===== */
+#header{
+      background: #e0e6e4;
+    
+    border: none !important;
+    position: sticky;
+    top: 0px;
+    z-index: 999;
+}
 
 #header ul li a{
     font-size: 20px;
@@ -86,9 +94,41 @@ h1, h2, h3, h4, h5, h6{
 }
 
 
-#biryani, #veg, #nonveg{
-    display: none;
+/* menu */
+
+#menu .card-content {
+
+    border-radius: 10px;
 }
+
+#menu .img-box {
+    width: 100%;
+    height: 160px;
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+
+#menu .img-box img {
+    width: 100%;
+    height: 160px;
+
+}
+
+#menu small {
+    position: relative;
+    bottom: 6px;
+
+}
+
+
+.sticky-top{
+    top: 78px !important;
+    z-index: 99;
+}
+
+/* #biryani, #veg, #nonveg{
+    display: none;
+} */
 @media screen and (min-width: 762px) {
     #hero .right h1{
         font-size: 64px; 
